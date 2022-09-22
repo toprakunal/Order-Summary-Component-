@@ -1,0 +1,170 @@
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+body{
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
+
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Red Hat Display";
+    text-align: center;
+}
+
+.card{
+    max-width: 1440px;
+    min-width: 375px;
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    height: 40rem;   
+    border-radius: 1rem;
+    background-color: white;
+}
+
+
+.header-img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-top:  2rem;
+}
+
+
+.card-mid-text{
+    color: var( --Desaturated-blue);
+    font-size: 1rem ;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.sub-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var( --Very-pale-blue);
+    border-radius: 0.8rem;
+    width: 84%;
+    height: 25%;
+    margin-left: 8%;
+    
+    
+}
+
+.sub-container-icon{
+    margin-right: 2rem;
+    
+    
+}
+
+.sub-container-header{
+    position: relative;
+    line-height: 0.6rem;
+    top: 0.2rem;
+    right: 1.2rem;
+}
+
+
+.sub-container-title{
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+.sub-container-price{
+    color: var( --Desaturated-blue);
+    font-size: 0.9rem;
+}
+
+.change-text{
+    margin-left: 4rem;
+    font-size: 0.9rem;
+    color: var(--Bright-blue);
+    text-decoration: underline;
+    font-weight: 900;
+    transition: all ease-in 0.5s
+    
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.payment-button{
+    margin-bottom: 2rem;
+    width: 82%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: var(--Bright-blue);
+    font-weight: 700;
+    transition: all ease-in 0.5s
+}
+
+
+.cancel-button{
+    width: 82%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: var(--Desaturated-blue);
+    background-color: white;
+    border: none;
+    font-weight: 700;
+    transition: all ease-in 0.5s
+}
+
+
+/* Hover */
+
+.change-text:hover{
+    filter: brightness(1.75);
+    cursor: pointer;
+}
+
+.payment-button:hover{
+    filter: brightness(1.75);
+    cursor: pointer;
+}
+
+.cancel-button:hover{
+    color: black;
+    cursor:pointer;
+}
+
+@media (max-width: 650px){
+    body{
+        background-image: url(../images/pattern-background-mobile.svg);
+        
+    }
+}
+
+
+
